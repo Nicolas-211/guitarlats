@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Dispatch } from 'react'
 import type { Guitar } from '../types'
 import type { CartActions } from '../reducers/cart-reducer'
@@ -10,6 +11,18 @@ type GuitarProps = {
 export default function Guitar({guitar, dispatch} : GuitarProps) {
 
     const { name, image, description, price } = guitar
+=======
+import type {Guitar} from '../types/index'
+
+type GuitarProps = {
+    guitar : Guitar, addToCart: (item: Guitar) => void
+}
+
+export default function Guitar({guitar, addToCart} : GuitarProps)  {
+
+    const {name, image, description, price } = guitar
+
+>>>>>>> fa5f86207230214e640465f56b2354b43f00d947
 
     return (
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -23,7 +36,11 @@ export default function Guitar({guitar, dispatch} : GuitarProps) {
                 <button 
                     type="button"
                     className="btn btn-dark w-100"
+<<<<<<< HEAD
                     onClick={() => dispatch({type: 'add-to-cart', payload: {item: guitar}})}
+=======
+                    onClick={() => addToCart(guitar)}
+>>>>>>> fa5f86207230214e640465f56b2354b43f00d947
                 >Agregar al Carrito</button>
             </div>
         </div>

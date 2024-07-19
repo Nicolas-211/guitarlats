@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import type { Guitar } from '../types'
+=======
+import type {Guitar} from '../types/index'
+>>>>>>> fa5f86207230214e640465f56b2354b43f00d947
 
 export const db : Guitar[] = [
     {
@@ -6,7 +10,11 @@ export const db : Guitar[] = [
         name: 'Lukather',
         image: 'guitarra_01',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+<<<<<<< HEAD
         price: 299
+=======
+        price: 299,
+>>>>>>> fa5f86207230214e640465f56b2354b43f00d947
     },
     {
         id: 2,
